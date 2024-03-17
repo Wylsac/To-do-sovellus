@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO-sovellus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Mitä pitää tehdä?</h1>
+    <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="Lisää tehtävä">
+        <button type="submit">Lisää</button>
+    </form>
+    <div id="todo-summary"></div>
+    <button id="show-all-btn">Kaikki</button>
+    <button id="show-completed-btn">Suoritetut</button>
+    <button id="show-active-btn">Aktiivinen</button>
+    <button id="clear-completed-btn">Tyhjennä suoritetut</button>
+    <ul id="todo-list"></ul>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
