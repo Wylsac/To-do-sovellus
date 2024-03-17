@@ -1,0 +1,101 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"].error {
+    border-color: red; /* Vaihdamme reunuksen värin punaiseksi */
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.delete-btn {
+    margin-right: 10px;
+}
+
+.todo-item button {
+    margin-left: 10px;
+}
+
+.todo-item {
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.todo-item.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.todo-item.completed::before {
+    content: '\2714';
+    color: green;
+    font-size: 20px;
+    position: absolute;
+    left: 5px;
+}
+
+.todo-item::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.error {
+    border: 1px solid red;
+}
+
+#todo-summary {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+#show-completed-btn,
+#show-all-btn,
+#show-active-btn,
+#clear-completed-btn {
+    background-color: #444;
+}
+
+button:hover, .hover-purple:hover {
+    background-color: #0056b3;
+    color: rgb(233, 190, 228); /* Tekstin värin muuttaminen, kun hiiri on päällä */
+}
